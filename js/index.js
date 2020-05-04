@@ -61,22 +61,34 @@ const heading = document.querySelector('.cta-text h1')
 const ctaBtn = document.querySelector('.cta-text button')
 const ctaImg = document.querySelector('#cta-img')
 
-// MAIN-CONTENT -- create variables for each part
-// // .main-content .top-content
+
+// .MAIN-CONTENT .top-content
 const featuresH4 = document.querySelector('.top-content .text-content h4')
 const featuresP = document.querySelector('.top-content .text-content p')
 const aboutH4 = document.querySelector('.top-content .text-content:nth-child(2) h4')
 const aboutP = document.querySelector('.top-content .text-content:nth-child(2) p')
 
+// .MAIN-CONTENT middle image
 const middleImg = document.getElementById('middle-img')
 
-// // .main-content .bottom-content
+// .MAIN-CONTENT .bottom-content
 const servicesH4 = document.querySelector('.bottom-content .text-content h4')
 const servicesP = document.querySelector('.bottom-content .text-content p')
 const productH4 = document.querySelector('.bottom-content .text-content:nth-child(2) h4')
 const productP = document.querySelector('.bottom-content .text-content:nth-child(2) p')
 const visionH4 = document.querySelector('.bottom-content .text-content:nth-child(3) h4')
 const visionP = document.querySelector('.bottom-content .text-content:nth-child(3) p')
+
+
+// CONTACT
+const contactH4 = document.querySelector('.contact h4')
+const address = document.querySelector('.contact p')
+const phone = document.querySelector('.contact p:nth-child(3)') 
+const email = document.querySelector('.contact p:nth-child(4)')
+
+// FOOTER 
+const footerP = document.querySelector('footer p')
+
 
 
 
@@ -111,6 +123,17 @@ servicesH4.textContent = siteContent['main-content']['services-h4']
 servicesP.textContent = siteContent['main-content']['services-content']
 productH4.textContent = siteContent['main-content']['product-h4']
 productP.textContent = siteContent['main-content']['product-content']
+
+// CONTACT
+contactH4.textContent = siteContent.contact['contact-h4']
+address.textContent = siteContent.contact['address']
+phone.textContent = siteContent.contact['phone']
+email.textContent = siteContent.contact['email']
+
+// FOOTER 
+footerP.textContent = siteContent.footer['copyright']
+
+
 
 
 // ## Task 3: Add new content
